@@ -13,21 +13,21 @@ form.addEventListener('submit', (e) => {
     kelvinElement.textContent = `Temperatura em Kelvin: ${kelvin.toFixed(2)}K`;
 });
 
-// Seleciona o botão de modo
+
 const modoBotao = document.getElementById('modo-botao');
 
-// Adiciona evento de clique ao botão
+
 modoBotao.addEventListener('click', () => {
-  // Verifica se o corpo do documento já tem a classe modo-escuro
+ 
   if (document.body.classList.contains('modo-escuro')) {
-    // Remove a classe modo-escuro
+    
     document.body.classList.remove('modo-escuro');
-    // Altera o texto do botão para "Modo Claro"
+   
     modoBotao.textContent = 'Modo Claro';
   } else {
-    // Adiciona a classe modo-escuro
+    
     document.body.classList.add('modo-escuro');
-    // Altera o texto do botão para "Modo Escuro"
+    
     modoBotao.textContent = 'Modo Escuro';
   }
 });
